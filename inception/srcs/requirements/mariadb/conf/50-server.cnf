@@ -1,0 +1,12 @@
+
+#[client-server]
+#!includedir /etc/mysql/conf.d/
+#!includedir /etc/mysql/mariadb.conf.d/
+
+[mysqld]
+basedir = /usr
+datadir = /var/lib/mysql
+pid-file = /run/mysqld/mysqld.pid
+socket = /run/mysqld/mysqld.sock
+bind-address = mariadb
+user = root
